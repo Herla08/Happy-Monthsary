@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>My speech for my most Love one</title>
+  <link rel = "icon" href = 
+"https://i.postimg.cc/hj1BrxSZ/My-love.png" 
+        type = "image/x-icon"> 
+  <style>
+	body {
+  font-family: 'Gochi Hand', cursive;
+font-family: 'Kameron', serif; 
+  color:#33ff66;
+  background: url("https://cutewallpaper.org/21/1920-x-1080-gif/1920x1080-Wallpapercartoon-Wallpapers-Driverlayer-Search-.gif");
+  letter-spacing: 3px; 
+  font-weight: bold;
+}
+  </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+ <head>
+ <link rel="stylesheet" type="text/css"
+<link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Kameron" rel="stylesheet">
+<body>
+  <div id="typedtext"></div>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
+<!-- partial -->
+  <script>
+	// set up text to print, each item in array is new line
+var aText = new Array(
+"Hi Love", 
+"Happy Monthsary", 
+  "I just want to say thank you for everything you gave to me" ,
+ "Baby you're my everything.",
+  "I love you with all my heart and soul and wishing us to be the happiest couple.",
+ "Sorry if Im being a stubborn and hard to dealt with sometimes, but with all of that," ,
+ "You're still always there for me and understanding me," ,
+ "I'm so grateful to have you my Love." ,
+  "I will always and be always be at your side." ,
+  "I love how the way we talk things and fix things together." ,
+  "The way we laugh together,",
+ "smile together,",
+  "cry together,",
+ "tease each other,",
+  "stare always all the time each other,",
+  "and imagine we're cuddling, hugging, and kissing always.",
+  "One day we will do that when we meet and spend our time everyday.",
+  "Always remember I will never leave you,",
+  "and always remember you are beautiful,",
+  "every flaws you think are always look perfect in my eyes.",
+  "Remember to always take care of yourself when im not around,",
+  "and I will take care of myself too,",
+  "Don't worry I will always be your baby,",
+  "and you will always be my Mommy<33.",
+  "your always gonna be in your mind 48/14.",
+  "Always excel and study and Ace your exams and test.",
+  "We will reach our goal,",
+  "I will support you from your goals and dreams.",
+  "Always remember that I Love You,",
+  "and dont overthink that i will leave you.",
+  "Thank you so much that I met you,",
+  "and I'm grateful that you came in to my life.",
+  "you were always there for me.",
+  "dont be afraid to tell me your problems,",
+  "I always be here ready to hear you and always vent to you,",
+  "Remember to smile always <3.",
+  "Mahal na Mahal kita.",
+  "Wala ng iba kung hindi ikaw lang.",
+  "I Love You",
+  "Happy Monthsary Love <3.",
+  
+);
+var iSpeed = 50; // time delay of print out
+var iIndex = 0; // start printing array at this position
+var iArrLength = aText[1].length; // the length of the text array
+var iScrollAt = 50; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 100);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+  </script>
+
+</body>
+</html>
